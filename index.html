@@ -14,7 +14,7 @@ The saturn animation is HEAVILY based on the codepen above. slight modifications
         <div id="navbar">
             <ul>
                 <li>
-                    <a href="#)">CS52</a>
+                    <a href="http://cs52.me/">CS52</a>
 
                 </li>
                 <li>
@@ -42,7 +42,7 @@ The saturn animation is HEAVILY based on the codepen above. slight modifications
                 let width = window.innerWidth,
                     height = window.innerHeight;
 
-                const colors = [0x37BE95, 0xF3F3F3, 0x6549C0];
+                const colors = [0x551A8B, 0xF3F3F3, 0x000000];
 
                 init();
                 animate();
@@ -107,7 +107,7 @@ The saturn animation is HEAVILY based on the codepen above. slight modifications
                     scene.add(particles);
                     const geometry = new THREE.TetrahedronGeometry(5, 0);
 
-                    for (let i = 0; i < 500; i++) {
+                    for (let i = 0; i < 250; i++) {
                         const material = new THREE.MeshPhongMaterial({
                             color: colors[Math.floor(Math.random() * colors.length)],
                             shading: THREE.FlatShading
@@ -127,7 +127,7 @@ The saturn animation is HEAVILY based on the codepen above. slight modifications
 
                     const planetGeometry = new THREE.IcosahedronGeometry(100, 1);
 
-                    const planetMaterial = new THREE.MeshPhongMaterial({color: 0x37BE95, shading: THREE.FlatShading});
+                    const planetMaterial = new THREE.MeshPhongMaterial({color: 0x7e7e7e, shading: THREE.FlatShading});
                     const planet = new THREE.Mesh(planetGeometry, planetMaterial);
 
                     planet.castShadow = true;
@@ -136,7 +136,7 @@ The saturn animation is HEAVILY based on the codepen above. slight modifications
                     saturn.add(planet);
 
                     const ringGeometry = new THREE.TorusGeometry(140, 12, 6, 15);
-                    const ringMeterial = new THREE.MeshStandardMaterial({color: 0x6549C0, shading: THREE.FlatShading});
+                    const ringMeterial = new THREE.MeshStandardMaterial({color: 0xfe5b2e, shading: THREE.FlatShading});
                     const ring = new THREE.Mesh(ringGeometry, ringMeterial);
                     ring.position.set(0, 40, 0)
                     ring.rotateX(80);
@@ -152,7 +152,7 @@ The saturn animation is HEAVILY based on the codepen above. slight modifications
 </html>
 function drawSaturn() { saturn=new THREE.Group(); saturn.rotation.set(0.4, 0.3, 0); scene.add(saturn); const planetGeometry=new THREE.IcosahedronGeometry(100, 1); const planetMaterial=new THREE.MeshPhongMaterial({color: 0x37BE95, shading:
 THREE.FlatShading}); const planet=new THREE.Mesh(planetGeometry, planetMaterial); planet.castShadow=true; planet.receiveShadow=true; planet.position.set(0, 40, 0); saturn.add(planet); const ringGeometry=new THREE.TorusGeometry(140, 12, 6, 15); const
-ringMeterial=new THREE.MeshStandardMaterial({color: 0x6549C0, shading: THREE.FlatShading}); const ring=new THREE.Mesh(ringGeometry, ringMeterial); ring.position.set(0, 40, 0) ring.rotateX(80); ring.castShadow=true; ring.receiveShadow=true;
+ringMeterial=new THREE.MeshStandardMaterial({color: 0x000000, shading: THREE.FlatShading}); const ring=new THREE.Mesh(ringGeometry, ringMeterial); ring.position.set(0, 40, 0) ring.rotateX(80); ring.castShadow=true; ring.receiveShadow=true;
 saturn.add(ring); }
 </script>
 <!-- END CITED CODE: http://codepen.io/elliepooh/pen/yMqqWe -->
