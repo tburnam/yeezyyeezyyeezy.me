@@ -39,7 +39,8 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  float: left;
+  float: center;
+  margin-bottom: 0em;
 
 }
 
@@ -64,7 +65,29 @@ div.saturn {
 
 }
 
+div.navbar {
+  text-align: center;
+}
+
 a.cite:link {
+  font-style: normal;
+  color: white;
+  font-family: "yeezy_tstar";
+  font-size: 12;
+  float: center;
+  text-decoration: none;
+}
+
+a.cite:hover {
+  font-style: normal;
+  color: white;
+  font-family: "yeezy_tstar";
+  font-size: 12;
+  float: right;
+  text-decoration: none;
+}
+
+a.cite:visited {
   font-style: normal;
   color: white;
   font-family: "yeezy_tstar";
