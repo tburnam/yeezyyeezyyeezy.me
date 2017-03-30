@@ -32,6 +32,15 @@ ul {
   font-family: 'yeezy_tstar';
 }
 
+a {
+  display: inline-flex;
+  color: white;
+  text-align: center;
+  padding: 10 10;
+  text-decoration: none;
+  float: center;
+  font-family: 'yeezy_tstar';
+}
 
 li a {
   display: block;
@@ -42,6 +51,24 @@ li a {
   float: center;
   margin-bottom: 0em;
 
+}
+
+div.nav {
+  display: inline;
+}
+
+p {
+  display: inline;
+  margin-left: 0em;
+  margin-right: 0em;
+  font-family: 'yeezy_tstar';
+  color: white;
+  font-size: 20;
+}
+
+p.footer {
+  margin-top: 10em;
+  text-align: center;
 }
 
 li a.selected {
@@ -58,11 +85,20 @@ div.selected {
 }
 
 div.saturn {
-  padding-left: 500;
-  padding-right: 500;
-  margin-left: 500;
-  margin-right: 500;
+  margin: 0 auto;
+}
 
+div.saturnOutter {
+  width: 100%;
+}
+
+div.saturn {
+  display: inline-block;
+}
+
+div.footer {
+  margin-top: 100%;
+  align-items: center;
 }
 
 div.navbar {
