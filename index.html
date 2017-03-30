@@ -18,10 +18,10 @@ The saturn animation is HEAVILY based on the codepen above. slight modifications
 
                 </li>
                 <li>
-                    <a href="#">tyler burnam</a>
+                    <a href="https://www.burnamtech.com">tyler burnam</a>
                 </li>
                 <li>
-                    WHAT I'M GOING TO BUILD
+                    <a href="#">what am i building...</a>
                 </li>
             </ul>
         </div>
@@ -148,5 +148,15 @@ The saturn animation is HEAVILY based on the codepen above. slight modifications
             <!-- END CITED CODE: http://codepen.io/elliepooh/pen/yMqqWe -->
         </div>
     </div>
+</body>
+</html>
+function drawSaturn() { saturn=new THREE.Group(); saturn.rotation.set(0.4, 0.3, 0); scene.add(saturn); const planetGeometry=new THREE.IcosahedronGeometry(100, 1); const planetMaterial=new THREE.MeshPhongMaterial({color: 0x37BE95, shading:
+THREE.FlatShading}); const planet=new THREE.Mesh(planetGeometry, planetMaterial); planet.castShadow=true; planet.receiveShadow=true; planet.position.set(0, 40, 0); saturn.add(planet); const ringGeometry=new THREE.TorusGeometry(140, 12, 6, 15); const
+ringMeterial=new THREE.MeshStandardMaterial({color: 0x6549C0, shading: THREE.FlatShading}); const ring=new THREE.Mesh(ringGeometry, ringMeterial); ring.position.set(0, 40, 0) ring.rotateX(80); ring.castShadow=true; ring.receiveShadow=true;
+saturn.add(ring); }
+</script>
+<!-- END CITED CODE: http://codepen.io/elliepooh/pen/yMqqWe -->
+</div>
+</div>
 </body>
 </html>
