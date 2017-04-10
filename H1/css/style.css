@@ -299,7 +299,7 @@ a.getStarted:link {
     body {
         margin: 0 0 0 0;
         padding: 0;
-        background-image: url(http://www.nintendowallpapers.com/wp-content/uploads/wallpapers/Mario-Level-Wallpaper-1280x960.png);
+        background-image: url("../img/mobileBG.png");
         background-size: cover;
         background-clip: content-box;
     }
