@@ -326,7 +326,7 @@ a.getStarted:link {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding-left: 30%;
+        padding-left: 20%;
     }
 
     .listMain {
