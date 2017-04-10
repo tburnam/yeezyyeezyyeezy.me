@@ -279,7 +279,7 @@ a.getStarted:link {
 .alreadyStarted {
     padding-top: 2%;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 670px) {
     .navbar .menuItemBlock {
         visibility: hidden;
     }
