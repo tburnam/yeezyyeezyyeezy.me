@@ -10,6 +10,7 @@ body {
     padding: 0;
     background-image: url(http://www.nintendowallpapers.com/wp-content/uploads/wallpapers/Mario-Level-Wallpaper-1280x960.png);
     background-size: cover;
+    background-position: center center;
 }
 
 #signin {
@@ -24,8 +25,8 @@ body {
 }
 
 .menuItemBlockMobile {
-  visibility: hidden;
-  display: none;
+    visibility: hidden;
+    display: none;
 }
 
 .layer {
@@ -90,16 +91,25 @@ ul li {
     text-decoration: underline;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+}
+
 .bottomBar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     right: 0;
-    bottom: 0;
     left: 0;
     color: white;
     background-color: rgb(31, 31, 31);
     padding: 10 10 10 10;
+    position: relative;
+    bottom: 0%;
 }
 
 .contactUs {
@@ -179,6 +189,7 @@ ul li {
     align-items: center;
     flex-direction: column;
     padding-bottom: 5%;
+    width: 100%;
 }
 
 .middleContent .title {
@@ -279,11 +290,17 @@ a.getStarted:link {
 .alreadyStarted {
     padding-top: 2%;
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 667px) {
+    body {
+        margin: 0 0 0 0;
+        padding: 0;
+        background-image: url(http://www.nintendowallpapers.com/wp-content/uploads/wallpapers/Mario-Level-Wallpaper-1280x960.png) repeat-x;
+        background-size: cover;
+    }
+
     .navbar .menuItemBlock {
         visibility: hidden;
     }
-
     /*.menuItemBlockMobile {
       visibility: visible;
       display: flex;
@@ -304,10 +321,11 @@ a.getStarted:link {
         padding-left: 5%
     }
     /* adapted from: http://callmenick.com/post/stylish-css-buttons */
+
     .smallList button {
         background-color: rgb(215, 43, 84);
         width: 100%;
-        max-width: 550px;
+        max-width: 667px;
         height: 5%;
         color: white;
         font-family: 'Press Start 2P', cursive;
