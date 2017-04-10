@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'super_mario_256regular';
+    src: url('supermario256-webfont.woff2') format('woff2'), url('supermario256-webfont.woff') format('woff'), url('supermario256-webfont.ttf') format('truetype'), url('supermario256-webfont.svg#super_mario_256regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 8 8 0 0;
+    padding: 0;
+    background-image: url(http://www.nintendowallpapers.com/wp-content/uploads/wallpapers/Mario-Level-Wallpaper-1280x960.png);
+    background-size: cover;
+    /*overflow: hidden;*/
+}
+
+#signin {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+
+/* hidden elements */
+
+.smallList {
+    visibility: hidden;
+    display: none;
+}
+
+.menuItemBlockMobile {
+    visibility: hidden;
+    display: none;
+}
+
+
+/* cool opacity layer to warm up view */
+
+.layer {
+    z-index: -120;
+    background-color: rgba(248, 247, 216, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+p.subtitle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+a {
+    font-family: 'Press Start 2P';
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+.bottomMenu {
+    display: flex;
+    padding-top: 3%;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.listMain {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20%;
+}
+
+.heading {
+    color: white;
+    font-family: 'Press Start 2P', current;
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.regularLink a {
+    font-family: 'Press Start 2P', current;
+    font-size: 10px;
+    color: rgb(129, 168, 233);
+}
+
+.regularLink:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+}
+
+.bottomBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    padding: 10 10 10 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contactUs {
+    text-align: center;
+    font-family: 'Press Start 2P', current;
+    font-size: 10px;
+    padding: 5 5 5 5;
+    word-wrap: break-word;
+}
+
+
+/*#signin {
+    border-radius: 25px;
+    border: 1px solid #010101;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    display:table-cell;
+    position: relative;
+}*/
+
+
+/*.cover {
+    background-color: rgb(223, 223, 223);
+    background-size: cover;
+}
+
+.navbar-container, .cs52, .navItems {
+    display: flex;
+    flex-flow: row;
+}
+ .cs52 {
+   justify-content: flex-start;
+   flex-flow: row-reverse;
+ }
+
+.navItems ul {
+  justify-content: flex-end;
+  flex-flow: row-reverse;
+}*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.navbar .menuItem {
+    display: block;
+    text-align: center;
+    padding: 1.5em;
+    color: white;
+    font-size: 8px;
+}
+
+.navbar .slack {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    white-space: nowrap;
+    height: inherit;
+}
+
+.navbar .menuItemBlock {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+
+/* break */
+
+.middleContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+    width: 100%;
+}
+
+.middleContent .title {
+    text-align: center;
+    color: white;
+    height: inherit;
+    font-size: 30px;
+    font-family: 'super_mario_256regular';
+    padding-bottom: 0px;
+}
+
+.middleContent .subtitle {
+    padding-top: 0;
+    text-align: center;
+    color: #F7CA18;
+    font-size: 12px;
+    padding-bottom: 5%;
+}
+
+.middleContent .subtitle {
+    display: flex;
+    flex: 1;
+}
+
+.middleContent .menuItem {
+    width: auto;
+    font-size: 10px;
+}
+
+
+}
+.middleContent div {
+    display: none;
+}
+.message {
+    padding-top: 5%;
+    font-family: 'Press Start 2P';
+    font-size: 9px;
+    color: rgb(129, 168, 233)
+}
+.backgroundStripe {
+    background-color: rgba(0, 0, 0, 0.11);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+/* SIGN UP BUTTON */
+.searchBar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-flow: row;
+    align-self: center;
+}
+.searchBar .searchBox {
+    height: 30px;
+    width: auto;
+}
+.searchBarButton {
+    display: flex;
+    flex-direction: row;
+}
+.getStarted {
+    color: #fff;
+    border: 2px solid #F7CA18;
+    padding-top: 0px;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+a.getStarted:hover:before {
+    height: 100%
+}
+a.getStarted:before {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    content: " ";
+    background: #dab214;
+    transition: all 0.2s cubic-bezier(0.2, 0.5, 0.5, 1)
+}
+a.getStarted:link {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    transition: all 1s ease;
+    text-decoration: none;
+}
+.alreadyStarted {
+    padding-top: 2%;
+}
+@media only screen and (max-width: 640px) {
+    html {
+      height: 100vh;
+      overflow-x: hidden;
+      max-height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Luisa helped me here! She added the overflow-x, width
+       and background-repeat code.
+    */
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("../img/mobileBG.png");
+        background-repeat: stretch;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .navbar .menuItemBlock {
+        visibility: hidden;
+    }
+
+    .menuItemBlockMobile {
+        visibility: visible;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 40%;
+    }
+
+    .listMain {
+        display: none;
+    }
+
+    .smallList {
+        display: flex;
+        visibility: visible;
+        flex-flow: row;
+        flex-wrap: wrap;
+        padding-bottom: 35%;
+        justify-content: space-between;
+    }
+    /* adapted from: http://callmenick.com/post/stylish-css-buttons */
+
+    .smallList button {
+        background-color: rgb(215, 43, 84);
+        width: 100%;
+        max-width: 667px;
+        height: 5%;
+        color: white;
+        font-family: 'Press Start 2P', cursive;
+        border-radius: 15px;
+        box-shadow: 0 10px rgb(46, 46, 46);
+        margin: 7px;
+        transition: All 250ms ease;
+    }
+
+    .smallList button:active {
+        box-shadow: 0 5px #27496d;
+        transform: translateY(3px);
+        background-color: rgb(67, 215, 124);
+        transition: All 250ms ease;
+    }
+
+    .middleContent .subtitle {
+        padding-top: 0;
+        text-align: center;
+        color: #F7CA18;
+        font-size: 10px;
+        padding-bottom: 10%;
+    }
+
+    .backgroundStripe {
+        background-color: rgba(0, 0, 0, 0.11);
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .searchBar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+        justify-content: space-between;
+    }
+
+    .searchBar .searchBox {
+        height: 30px;
+        width: 120%;
+        padding-bottom: 5px;
+    }
+
+    .searchBarButton {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .getStarted {
+        color: #fff;
+        border: 2px solid #F7CA18;
+        text-align: center;
+        vertical-align: middle;
+        width: 107%;
+    }
+}
