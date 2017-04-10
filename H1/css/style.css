@@ -10,7 +10,7 @@ body {
     padding: 0;
     background-image: url(http://www.nintendowallpapers.com/wp-content/uploads/wallpapers/Mario-Level-Wallpaper-1280x960.png);
     background-size: cover;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 #signin {
@@ -302,6 +302,8 @@ a.getStarted:link {
         padding: 0;
         background-image: url("../img/mobileBG.png");
         background-repeat: no-repeat;
+        overflow-x: hidden;
+        /*width: 100%;*/
 
     }
 
