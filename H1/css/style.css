@@ -295,12 +295,13 @@ a.getStarted:link {
 .alreadyStarted {
     padding-top: 2%;
 }
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 640px) {
     body {
         margin: 0 0 0 0;
         padding: 0;
         background-image: url("../img/mobileBG.png");
         background-repeat: no-repeat;
+        background-size: 100% 640px;
     }
 
     .navbar .menuItemBlock {
