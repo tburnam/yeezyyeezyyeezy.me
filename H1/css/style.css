@@ -297,13 +297,22 @@ a.getStarted:link {
     padding-top: 2%;
 }
 @media only screen and (max-width: 640px) {
+    html {
+      height: 100vh;
+      overflow-x: hidden;
+      max-height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
     body {
         margin: 0;
         padding: 0;
         background-image: url("../img/mobileBG.png");
-        background-repeat: no-repeat;
-        overflow: hidden;
+        background-repeat: stretch;
+        overflow-x: hidden;
         width: 100vw;
+        /*min-height: 100vh;*/
+        /*max-height: 100vh;*/
         /*height: 100vh;*/
     }
 
