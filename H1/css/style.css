@@ -304,17 +304,17 @@ a.getStarted:link {
       padding: 0;
       margin: 0;
     }
+
+    /* Luisa helped me here! She added the overflow-x, width
+       and background-repeat code.
+    */
     body {
         margin: 0;
         padding: 0;
         background-image: url("../img/mobileBG.png");
         background-repeat: stretch;
-        /*background-size: cover;*/
         overflow-x: hidden;
         width: 100vw;
-        /*min-height: 100vh;*/
-        /*max-height: 100vh;*/
-        /*height: 100vh;*/
     }
 
     .navbar .menuItemBlock {
@@ -326,7 +326,7 @@ a.getStarted:link {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding-left: 20%;
+        padding-left: 40%;
     }
 
     .listMain {
