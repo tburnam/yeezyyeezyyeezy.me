@@ -300,8 +300,7 @@ a.getStarted:link {
         margin: 0 0 0 0;
         padding: 0;
         background-image: url("../img/mobileBG.png");
-        background-size: cover;
-        background-clip: content-box;
+        background-repeat: no-repeat;
     }
 
     .navbar .menuItemBlock {
