@@ -109,13 +109,13 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    right: 0;
-    left: 0;
     color: white;
     background-color: rgb(31, 31, 31);
     padding: 10 10 10 10;
-    position: relative;
-    bottom: 0%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .contactUs {
@@ -309,6 +309,7 @@ a.getStarted:link {
         padding: 0;
         background-image: url("../img/mobileBG.png");
         background-repeat: stretch;
+        /*background-size: cover;*/
         overflow-x: hidden;
         width: 100vw;
         /*min-height: 100vh;*/
@@ -324,6 +325,7 @@ a.getStarted:link {
         visibility: visible;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         padding-left: 20%;
     }
 
