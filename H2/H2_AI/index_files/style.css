@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "yeezy_tstar";
+    src: url('../fonts/yeezy_tstar-bold-webfont-webfont.eot');
+    src: url('../fonts/yeezy_tstar-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/yeezy_tstar-bold-webfont-webfont.woff') format('woff'), url('fonts/yeezy_tstar-bold-webfont.ttf') format('truetype'), url('../fonts/yeezy_tstar-bold-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "vcr";
+    src: url('../fonts/VCR_OSD_MONO_1.001.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav {
+    background-color: rgb(40, 24, 37);
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'vcr';
+    font-size: 10px;
+}
+
+.navLeft {
+    float: left;
+}
+
+.middleX {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.navRight {
+    float: right;
+}
+
+body a {
+    text-decoration: none;
+    color: white;
+    font-family: 'vcr';
+    font-size: 30px;
+}
+
+.bannerLogo {
+    height: 250px;
+    width: 346px;
+}
+
+body {
+    background-color: rgb(40, 24, 37);
+}
+
+.bg {
+    background-color: rgb(40, 24, 37);
+    background-image: url("../H2_AI/staticmain7.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: -100;
+    background-size: 75%;
+    height: 100%;
+    min-width: 480px;
+}
+
+
+/* ADAPTED FROM: https://www.w3schools.com/howto/howto_css_parallax.asp */
+
+.static {
+    /* The image used */
+    background-image: url("../H2_AI/staticmain7.png");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    height: 100%;
+    min-width: 480px;
+    /*min-height: 240px;
+    min-width: 426px;*/
+}
+
+h1 {
+    color: white;
+    font-family: "vcr";
+    font-size: 35px;
+    text-align: center;
+    background-color: black;
+    width: 50%;
+    padding: 20px;
+}
+
+.question-wrapper {
+    margin-bottom: 10%;
+}
+
+.question {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+
+.option {
+    width: 20%;
+    height: 20%;
+    /*border-radius: 2px;
+    border-color: #2e3138;*/
+    background: #1a1c1f;
+    font-family: "vcr";
+    color: white;
+    text-align: center;
+    margin: 3%;
+    /* ADAPTED FROM: https://www.w3schools.com/css/css3_shadows.asp */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*float: left;
+    flex-flow: column;
+    font-size: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;*/
+    border: 10px solid #2e3138;
+}
+
+.option img {
+    height: 100%;
+    width: 100%;
+}
+
+.option:hover {
+    background-color: rgb(18, 205, 223);
+    color: black;
+}
+
+
+/*@media all and (min-width: 40em) {
+    .option {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 60em) {
+    .option {
+        width: 33.33%;
+    }
+}*/
