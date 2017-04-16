@@ -17,16 +17,12 @@ let images = {
 }
 
 var getTopScore = () => {
-    console.log(scores)
-
     // Yeah, there's no way I wrote this. Taken from: http://stackoverflow.com/questions/27376295/getting-key-with-the-highest-value-from-object
     var topScore = Object.keys(scores).reduce(function (a, b) {
         return scores[a] > scores[b]
             ? a
             : b
     });
-
-    console.log(topScore);
     return topScore;
 
 }
@@ -61,11 +57,7 @@ function typeOf(obj) {
 }
 
 function goToIncomplete() {
-    console.log("Go to top");
-
     let question = document.getElementsByClassName("option")[0].parentElement.id;
-
-    // console.log(question[0].parentElement.id);
 
     $('html,body').animate({
         scrollTop: $("#" + question).offset().top - 120
@@ -74,14 +66,7 @@ function goToIncomplete() {
 
 // Set event handlers
 window.onload = () => {
-
-    // var css = '.option:hover {background-color: rgb(18, 205, 223); color: black;}'; var style = document.createElement('style');
-    //
-    // if (style.styleSheet) {     style.styleSheet.cssText = css; } else {     style.appendChild(document.createTextNode(css)); }
-    //
-    // document.getElementsByTagName('head')[0].appendChild(style) EVENT Handler
     let optionClick = (e) => {
-        console.log(e);
 
         // Set variabls
         let currentQuestionDiv;
@@ -106,7 +91,6 @@ window.onload = () => {
 
         // If click on selected option - clear
         if (currentActiveDiv) {
-            console.log("here!")
             let children = currentQuestionDiv.children;
             for (var i = 0; i < children.length; i++) {
                 let currentDiv = children[i]
@@ -141,7 +125,6 @@ window.onload = () => {
 
                     modifyScore(currentOptionDiv.id, 1);
 
-                    console.log(document.getElementsByClassName('active').length);
 
                     // Finished Quiz!
                     if (document.getElementsByClassName('active').length == 5) {
@@ -174,12 +157,9 @@ window.onload = () => {
         classes[i].addEventListener('click', optionClick, false);
     };
 }
-// ADAPTED FROM SOMEWHERE, LOST LINK BUT COPIED CODE BEFORE | TODO: FIND
+// ADAPTED FROM: http://stackoverflow.com/questions/20697004/css-background-blur-on-scroll
 $(window).scroll(function (e) {
-
     var distanceScrolled = $(this).scrollTop();
-
     $(".bg").css('-webkit-filter', 'blur(' + distanceScrolled / 60 + 'px)');
-    console.log("here")
 
 });

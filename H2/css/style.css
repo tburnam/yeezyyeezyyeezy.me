@@ -283,6 +283,19 @@ h1 {
   max-width: 100%;
 }
 
+.startOver {
+  width: 20%;
+  height: 10%;
+  background-color: red;
+  text-align: center;
+  vertical-align: middle;
+  background-color: black;
+  border: 10px solid #2e3138;
+  color: white;
+  font-family: 'vcr';
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*@media all and (min-width: 40em) {
     .option {
         width: 50%;
